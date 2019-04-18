@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project List</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Projects</h1>
+
+        <!-- filter with no parens passes the event as an argument to the filter function -->
+        <!-- <button @click="filter">Remove filter</button> -->
+        <button class="remove-filter" @click="filter()">Remove filter</button>
+
+        <br>
+
+        <button v-for="tag in tags" v-bind:class="tag" @click="filter(tag)"> {{ tag }}</button>
+
+        <div v-for="project in filteredProjects" v-bind:key="project.name">
+            <h2 class="name">{{ project.name }}</h2>
+            <p class="description">{{ project.description}}</p>
+
+            <ul>
+                <li v-for="tag in project.tags">{{ tag }}</li>
+            </ul>
+            </div>
+
+
+    </div>
+
+    <script>
+        let app = new Vue({
+            el: '#app',
+            data: {
+                projects: [],
+                filteredProjects: [],
+                tags: []
+            },
+            mounted() {
+                fetch('./projects.json')
+                    .then( response => response.json() )
+                    .then( data => {
+                        console.log(data)
+                        this.projects = data 
+                        this.filteredProjects = data 
+                        this.buildUniqueTags()
+                    })
+            },
+            methods: {
+                buildUniqueTags() {
+                    //todo 
+                    this.tags = []
+                    this.projects.forEach( proj => {
+                        proj.tags.sort()
+                        proj.tags.forEach( tag => {
+                            if (!this.tags.includes(tag)) {
+                                this.tags.push(tag)
+                            }
+                        })
+                    }) 
+                }
+        ,
+            filter(tag) {
+                console.log('no tag', tag)
+                    
+                if (!tag) { 
+                    console.log('no tag', tag)
+                    this.filteredProjects = this.projects; 
+                     
+                } else {
+                this.filteredProjects = this.projects.filter( project => {
+                    return project.tags.includes(tag)
+                })
+                }
+            }
+            }
+        })
+    </script>
+
+</body>
+</html>
+

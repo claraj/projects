@@ -1,0 +1,65 @@
+[
+    { 
+        "name": "Roommate Bill Management",
+        "description": "Create a list of roommates, be able to add bills - for example, biller, amount, due date. Keep track of who has paid. Display what each person has paid, and what they owe. \nOptionally track who is paying on time, and who is late.",
+        "tags": [
+            "Web",
+            "Mobile",
+            "Desktop"
+        ]
+    },
+    { 
+        "name": "Personal Trainer",
+        "description": "This app is for a personal trainer, to keep track of their clients and their progress. Schedule training sessions, keep track of each client's progress. For a mobile version, take photographs of clients as part of tracking their progress.",
+        "tags": [
+            "Mobile",
+            "Web",
+            "Desktop"
+        ]
+    },
+    { 
+        "name": "Car or House Maintenance",
+        "description": "Make a list of maintenance tasks for a home or car. Tasks will repeat daily, weekly, monthly, seasonally... Keep records of when user has completed tasks. Remind user when a task is due." ,
+        "tags": [
+            "Mobile",
+            "Web",
+            "Desktop"
+        ]
+    },
+    { 
+        "name": "Budgeting App",
+        "description": "Record user's income and expenses. Draw charts or graphs.",
+        "tags": [
+            "Mobile",
+            "Web",
+            "Desktop"
+        ]
+    },
+    { 
+        "name": "Book Club (or Movie Club)",
+        "description": "Organize a group of friends to select a book, schedule a time to meet and discuss the book. Record everyone's opinion of the book. Send reminders about the event. Could also work as a movie-watching club",
+        "tags": [
+            "Web",
+            "Android",
+            "Desktop"
+        ]
+    },
+    { 
+        "name": "Road Trip Planner",
+        "description": "Create a list of places to go. Draw maps.",
+        "tags": [
+            "Web",
+            "Mobile"
+        ]
+    },
+    { 
+        "name": "Aurora Predictor",
+        "description": "Use the aurora API (https://services.swpc.noaa.gov/json/planetary_k_index_1m.json)  and weather API to display likelyhood of seeing an aurora in the user's location. High kP and clear skies = better chance. Draw charts of aurora strength.",
+        "tags": [
+            "Web",
+            "Mobile",
+            "Desktop"
+        ]
+    }
+
+]
