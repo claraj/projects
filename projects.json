@@ -10,7 +10,7 @@
     },
     { 
         "name": "Personal Trainer",
-        "description": "This app is for a personal trainer, to keep track of their clients and their progress. Schedule training sessions, keep track of each client's progress. For a mobile version, take photographs of clients as part of tracking their progress.",
+        "description": "This app is for a personal trainer, to keep track of their clients and their progress. Schedule training sessions, keep track of each client's progress. For a mobile version, take photographs of clients as part of tracking their progress. Extension: integrate Google Calendar to create events and send reminders.",
         "tags": [
             "Mobile",
             "Web",
@@ -19,7 +19,7 @@
     },
     { 
         "name": "Car or House Maintenance",
-        "description": "Make a list of maintenance tasks for a home or car. Tasks will repeat daily, weekly, monthly, seasonally... Keep records of when user has completed tasks. Remind user when a task is due." ,
+        "description": "Make a list of maintenance tasks for a home or car. Tasks will repeat daily, weekly, monthly, seasonally... Keep records of when user has completed tasks. Remind user when a task is due. Extension: integrate Google Calendar to create events and send reminders." ,
         "tags": [
             "Mobile",
             "Web",
@@ -37,16 +37,16 @@
     },
     { 
         "name": "Book Club (or Movie Club)",
-        "description": "Organize a group of friends to select a book, schedule a time to meet and discuss the book. Record everyone's opinion of the book. Send reminders about the event. Could also work as a movie-watching club",
+        "description": "Organize a group of friends to select a book, schedule a time to meet and discuss the book. Record everyone's opinion of the book. Send reminders about the event. Could also work as a movie-watching club. Extension: intrgrate Google Calendar to create events and send reminders.",
         "tags": [
             "Web",
-            "Android",
+            "Mobile",
             "Desktop"
         ]
     },
     { 
         "name": "Road Trip Planner",
-        "description": "Create a list of places to go. Draw maps.",
+        "description": "Create a list of places to go. For a mobile version, track where the user has been, and/or use geofencing to detect when user has been to a place on their roadtrip itinerary. Draw maps.",
         "tags": [
             "Web",
             "Mobile"
@@ -60,6 +60,37 @@
             "Mobile",
             "Desktop"
         ]
+    },
+    { 
+        "name": "Recipe Book Generator",
+        "description": "Use recipe APIs to fetch recipes based on a user's search query. Use a library like python-docx or Java's Apache POI to create a neatly-formatted word document with recipes in.",
+        "tags": [
+            "Desktop"
+        ]
+    },
+    { 
+        "name": "Programmer Resources",
+        "description": "Use Stack Overflow, Reddit, GitHub... APIs to fetch information based on a search query, topic, or error message. Allow user to bookmark useful pages.",
+        "tags": [
+            "Desktop"
+        ]
+    },
+    { 
+        "name": "Meme Collector",
+        "description": "Use Imgur, Reddit, Giphy, Tumblr...  APIs to fetch images and gifs. User should be abe to download/collect their favourites and organize them into folders. For a mobile version, integrate sharing with friends.",
+        "tags": [
+            "Desktop",
+            "Mobile",
+            "Web"
+        ]
+    },
+    { 
+        "name": "Where's the bus?",
+        "description": "Use Metro Transit's API to track buses, and draw their locations on a map. Be careful not to overload their API.",
+        "tags": [
+            "Desktop",
+            "Mobile",
+            "Web"
+        ]
     }
-
 ]

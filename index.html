@@ -42,7 +42,6 @@
                 fetch('./projects.json')
                     .then( response => response.json() )
                     .then( data => {
-                        console.log(data)
                         this.projects = data 
                         this.filteredProjects = data 
                         this.buildUniqueTags()
@@ -50,7 +49,6 @@
             },
             methods: {
                 buildUniqueTags() {
-                    //todo 
                     this.tags = []
                     this.projects.forEach( proj => {
                         proj.tags.sort()
@@ -62,13 +60,9 @@
                     }) 
                 }
         ,
-            filter(tag) {
-                console.log('no tag', tag)
-                    
+            filter(tag) {      
                 if (!tag) { 
-                    console.log('no tag', tag)
-                    this.filteredProjects = this.projects; 
-                     
+                    this.filteredProjects = this.projects
                 } else {
                 this.filteredProjects = this.projects.filter( project => {
                     return project.tags.includes(tag)

@@ -9,28 +9,32 @@ button {
     padding: 0.5em 1em;
     margin: 0.5em;
     border-radius: 0.1em;
-    color: darkolivegreen;
-    background: lightsteelblue;
+    color: darkslategray;
+    background: #C5979D;
 }
 
 .remove-filter {
+    color: darkslategray;
     background: whitesmoke;
 }
 
-.Java {
+/* .Java {
     background: lightsalmon;
-}
+} */
 
 .Web {
-    background: palegoldenrod;
+    color: whitesmoke;
+    background: #2C365E;
 }
 
 .Mobile {
-    background: springgreen
+    color: whitesmoke;
+    background: #4B8F8C;
 }
 
 .Desktop {
-    background: lavender;
+    color: whitesmoke;
+    background: #2B193D;
 }
 
 ul {
